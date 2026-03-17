@@ -51,3 +51,23 @@
   - Rounded buttons
   - Modern typography
   - Adaptive color system
+
+8. `Stateless and Stateful widgets`
+   `StatelessWidget`
+   A StatelessWidget is a widget that does not change over time.
+   It is immutable, meaning once it is created, its data cannot be modified.
+
+   `StatefulWidget`
+   A StatefulWidget is a widget that can change over time.
+   It has a separate State object that holds mutable data.
+
+  `setState()`
+  setState() is used inside a StatefulWidget to update the UI. 
+  It does:
+  - Updates (mutates) the state/data
+  - Tells Flutter to rebuild the widget
+
+9. `TextEditingController`
+- Used TextEditingController to read input from TextField.
+- Cleared input using `_controller.clear()` after adding a todo.
+- Disposed controller using `dispose()` to prevent memory leaks.
