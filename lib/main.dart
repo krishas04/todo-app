@@ -16,11 +16,22 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Color(0xFF7AAACE)),
         useMaterial3: true,
         ),
-      home: const Scaffold(
-        body: Center(
-          child: Text('Todo App'),
-          ),
-        ),
+      home: TodoScreen()
+    );
+  }
+}
+
+class TodoScreen extends StatelessWidget {
+  const TodoScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('My Todos'),
+        centerTitle: true,
+      ),
+      body: Center(child: Text('No todos yet.')),
     );
   }
 }
